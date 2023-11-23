@@ -1,5 +1,6 @@
 require('dotenv').config()
 
+const cors = require('cors')
 const express = require('express')
 const mongoose = require('mongoose')
 const itemRoutes = require('./routes/items')
@@ -9,6 +10,9 @@ const app = express()
 
 // middleware
 app.use(express.json())
+app.use(cors(
+  {origin: ["http://localhost:3000", "https://bhumir2503.github.io/Inventory-Manager"]} 
+))
 
 app.use((req, res, next) => {
   console.log(req.path, req.method)
@@ -16,7 +20,7 @@ app.use((req, res, next) => {
 })
 
 // routes
-app.use('/api/items', itemRoutes)
+app.use('/Inventory-Manager/', itemRoutes)
 
 // connect to db
 mongoose.connect(process.env.MONGO_URI)
