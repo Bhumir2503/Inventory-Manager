@@ -23,7 +23,7 @@ app.use((req, res, next) => {
 app.use('/Inventory-Manager/', itemRoutes)
 
 // connect to db
-mongoose.connect(process.env.MONGO_URI)
+mongoose.connect(process.env.MONGO_URI,  { ssl: true })
   .then(() => {
     console.log('connected to database')
     // listen to port
