@@ -17,7 +17,7 @@ const ItemForm = () => {
 
     const item = {title, count, price, PLU, group}
     
-    const response = await fetch('/Inventory-Manager/api/items', {
+    const response = await fetch('/api/items', {
       method: 'POST',
       body: JSON.stringify(item),
       headers: {
