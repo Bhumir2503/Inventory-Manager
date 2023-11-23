@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Inventory-Manager/frontend/static/css/main.bd5782c8.css",
+    "main.js": "/Inventory-Manager/frontend/static/js/main.64edac27.js",
+    "index.html": "/Inventory-Manager/frontend/index.html",
+    "main.bd5782c8.css.map": "/Inventory-Manager/frontend/static/css/main.bd5782c8.css.map",
+    "main.64edac27.js.map": "/Inventory-Manager/frontend/static/js/main.64edac27.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd5782c8.css",
+    "static/js/main.64edac27.js"
+  ]
+}
