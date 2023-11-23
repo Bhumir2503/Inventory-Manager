@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const response = await fetch('/api/items')
+      const response = await fetch('localhost:4000/Inventory-Manager/api/items/')
       const json = await response.json()
 
       if (response.ok) {
