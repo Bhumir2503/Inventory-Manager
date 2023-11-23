@@ -13,7 +13,7 @@ function App() {
         <div className="pages">
           <Routes>
             <Route 
-              path="/" 
+              path="/Inventory-Manager" 
               element={<Home />} 
             />
           </Routes>

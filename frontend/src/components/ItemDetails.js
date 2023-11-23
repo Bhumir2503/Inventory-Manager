@@ -6,7 +6,7 @@ const ItemDetails = ({ item }) => {
   const { dispatch } = useItemsContext()
 
   const handleClick = async () => {
-    const response = await fetch('/api/items/' + item._id, {
+    const response = await fetch('/Inventory-Manager/api/items/' + item._id, {
       method: 'DELETE'
     })
     const json = await response.json()
