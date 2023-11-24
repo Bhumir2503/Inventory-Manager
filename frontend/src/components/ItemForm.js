@@ -17,7 +17,7 @@ const ItemForm = () => {
 
     const item = {title, count, price, PLU, group}
     
-    const response = await fetch('https://inventory-backend-h9ar.onrender.com/', {
+    const response = await fetch('https://inventory-backend-h9ar.onrender.com/Inventory-Manager/', {
       method: 'POST',
       body: JSON.stringify(item),
       headers: {
