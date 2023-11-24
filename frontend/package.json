@@ -1,7 +1,7 @@
 
 {
   "homepage": "https://bhumir2503.github.io/Inventory-Manager/",
-  "proxy": "http://localhost:4000",
+  "proxy": "https://inventory-backend-h9ar.onrender.com:4000",
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
