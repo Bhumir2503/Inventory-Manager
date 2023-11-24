@@ -10,7 +10,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchItems = async () => {
-      const response = await fetch('http://localhost:4000/Inventory-Manager/')
+      const response = await fetch('https://inventory-backend-h9ar.onrender.com/')
       const json = await response.json()
 
       if (response.ok) {

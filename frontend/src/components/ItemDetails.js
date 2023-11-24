@@ -6,7 +6,7 @@ const ItemDetails = ({ item }) => {
   const { dispatch } = useItemsContext()
 
   const handleClick = async () => {
-    const response = await fetch('http://localhost:4000/Inventory-Manager/' + item._id, {
+    const response = await fetch('https://inventory-backend-h9ar.onrender.com/' + item._id, {
       method: 'DELETE'
     })
     const json = await response.json()
