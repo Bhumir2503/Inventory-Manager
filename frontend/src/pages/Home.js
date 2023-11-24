@@ -24,6 +24,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="items">
+        <h1>Download CorsUnblock From Google extention store</h1>
         {items && items.map(item => (
           <ItemDetails item={item} key={item._id} />
         ))}
